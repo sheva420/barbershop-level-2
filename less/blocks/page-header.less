@@ -1,0 +1,37 @@
+.page-header {
+	display: flex;
+	flex-direction: column;
+	
+	background-color: #242424;
+}
+
+.page-header__logo {
+	order: 1;
+	height: 85px;
+	outline: 2px solid red;
+}
+
+@media (min-width: @tablet-width) {
+	.page-header {
+		background-image: url(../img/tablet/background.jpg);
+		background-position: 0 0;
+		background-repeat: no-repeat;
+	}
+	
+	.page-header__logo {
+		order: 2;
+		height: 400px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.page-header {
+		background-image: url(../img/desktop/background.jpg);
+		background-position: 0 0;
+		background-repeat: no-repeat;
+	}
+	
+	.page-header__logo {
+		height: 648px;
+	}
+}
