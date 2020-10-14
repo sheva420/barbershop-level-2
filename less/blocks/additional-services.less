@@ -1,0 +1,40 @@
+.additional-services {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	border: none;
+}
+
+.additional-services__title {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.additional-services__list {
+	.list-reset;
+}
+
+.additional-services__name {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+	.additional-services__title {
+		.title-style;
+		font-weight: 400;
+	}
+	
+	.additional-services__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.additional-services__name {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}

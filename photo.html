@@ -46,7 +46,7 @@
 
 	<main class="page-main">
 		<section class="works">
-			<h2 class="works-title">Наши работы</h2>
+			<h2 class="works__title">Наши работы</h2>
 			<a class="works__to-main button" href="index.html">На главную</a>
 			<ul class="works__list">
 				<li class="works__item works__item--month">
@@ -96,45 +96,47 @@
 		</section>
 
 		<section class="prices">
-		<h2 class="prices__title">Прейскурант</h2>
-			<table class="prices__table">
-				<tr>
-					<td class="prices__number">1</td>
-					<td class="prices__name">Классическая стрижка</td>
-					<td class="prices__additionally">с мытьём головы</td>
-					<td class="prices__value">1 500 руб.</td>
-				</tr>
-				<tr>
-					<td class="prices__number">2</td>
-					<td class="prices__name">Современный вариант</td>
-					<td class="prices__additionally">с мытьём головы</td>
-					<td class="prices__value">1 500 руб.</td>
-				</tr>
-				<tr>
-					<td class="prices__number">3</td>
-					<td class="prices__name">Индивидуальный подход</td>
-					<td class="prices__additionally">с мытьём головы</td>
-					<td class="prices__value">2 000 руб.</td>
-				</tr>
-				<tr>
-					<td class="prices__number">4</td>
-					<td class="prices__name">Бритьё бороды</td>
-					<td class="prices__additionally">без мытья</td>
-					<td class="prices__value">500 руб.</td>
-				</tr>
-				<tr>
-					<td class="prices__number">5</td>
-					<td class="prices__name">Бритьё головы</td>
-					<td class="prices__additionally">с мытьём головы</td>
-					<td class="prices__value">1 000 руб.</td>
-				</tr>
-			</table>
-			<div class="prices__discount discount">
-				<b class="discount__text">C 10:00 до 14:00 скидка 20%</b>
+			<h2 class="prices__title">Прейскурант</h2>
+			<div class="prices__wrapper">
+				<table class="prices__table">
+					<tr>
+						<td class="prices__number">1</td>
+						<td class="prices__name">Классическая стрижка</td>
+						<td class="prices__additionally">с мытьём головы</td>
+						<td class="prices__value">1 500 руб.</td>
+					</tr>
+					<tr>
+						<td class="prices__number">2</td>
+						<td class="prices__name">Современный вариант</td>
+						<td class="prices__additionally">с мытьём головы</td>
+						<td class="prices__value">1 500 руб.</td>
+					</tr>
+					<tr>
+						<td class="prices__number">3</td>
+						<td class="prices__name">Индивидуальный подход</td>
+						<td class="prices__additionally">с мытьём головы</td>
+						<td class="prices__value">2 000 руб.</td>
+					</tr>
+					<tr>
+						<td class="prices__number">4</td>
+						<td class="prices__name">Бритьё бороды</td>
+						<td class="prices__additionally">без мытья</td>
+						<td class="prices__value">500 руб.</td>
+					</tr>
+					<tr>
+						<td class="prices__number">5</td>
+						<td class="prices__name">Бритьё головы</td>
+						<td class="prices__additionally">с мытьём головы</td>
+						<td class="prices__value">1 000 руб.</td>
+					</tr>
+				</table>
+				<div class="prices__discount discount">
+					<b class="discount__text">C 10:00 до 14:00 скидка 20%</b>
+				</div>
 			</div>
 		</section>
 	</main>
-	
+
 	<footer class="page-footer">
 		<div class="page-footer__wrapper">
 			<div class="page-footer__contacts contacts">
@@ -166,23 +168,23 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<section class="popup popup--login">
 		<h2 class="popup__title">Личный кабинет</h2>
 		<p class="popup__text">Введите свой логин и пароль, чтобы войти</p>
 		<form action="#">
-		<p class="popup__input-wrapper popup__input-wrapper--login">
-			<input class="popup__input" type="text" placeholder="Логин">
-		</p>
-		<p class="popup__input-wrapper popup__input-wrapper--password">
-			<input class="popup__input" type="password" placeholder="Пароль">
-		</p>
-		<p class="popup__input-wrapper popup__input-wrapper--buttons">
-			<input class="popup__checkbox button--checkbox" type="checkbox" id="remember">
-			<label class="popup__remember" for="remember">Запомните меня</label>
-			<a class="popup__forgot" href="#">Я забыл пароль!</a>
-		</p>
-		<button class="popup__button button" type="submit">Войти в личный кабинет</button>
+			<p class="popup__input-wrapper popup__input-wrapper--login">
+				<input class="popup__input" type="text" placeholder="Логин">
+			</p>
+			<p class="popup__input-wrapper popup__input-wrapper--password">
+				<input class="popup__input" type="password" placeholder="Пароль">
+			</p>
+			<p class="popup__input-wrapper popup__input-wrapper--buttons">
+				<input class="popup__checkbox button--checkbox" type="checkbox" id="remember">
+				<label class="popup__remember" for="remember">Запомните меня</label>
+				<a class="popup__forgot" href="#">Я забыл пароль!</a>
+			</p>
+			<button class="popup__button button" type="submit">Войти в личный кабинет</button>
 		</form>
 		<button class="popup__close">Закрыть окно</button>
 	</section>

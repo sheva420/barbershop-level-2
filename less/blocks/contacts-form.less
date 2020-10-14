@@ -1,0 +1,42 @@
+.contacts-form {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+	border: none;
+}
+
+.contacts-form__list {
+	.list-reset;
+}
+
+.contacts-form__item {
+	width: 100%;
+}
+
+.contacts-form__input {
+	width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+	.contacts-form__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.contacts-form__item--1,
+	.contacts-form__item--2,
+	.contacts-form__item--3 {
+		width: 214px;
+	}
+	
+	.contacts-form__item--4,
+	.contacts-form__item--5,
+	.contacts-form__item--6 {
+		width: 100%;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	
+}

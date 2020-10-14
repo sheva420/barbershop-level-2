@@ -1,0 +1,39 @@
+.beard-model {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+	border: none;
+}
+
+.beard-model__title {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.beard-model__list {
+	.list-reset;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.beard-model__name {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+	.beard-model__title {
+		.title-style;
+		font-weight: 400;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.beard-model__name {
+		font-size: 24px;
+		line-height: 24px;
+	}
+}
