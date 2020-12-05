@@ -433,7 +433,7 @@ img {
   }
 }
 .page-footer {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 24px;
@@ -467,7 +467,8 @@ img {
   }
 }
 .contacts {
-  width: 280px;
+  width: 88%;
+  margin: 0 auto;
   padding: 0 20px;
 }
 .contacts__title {
@@ -487,7 +488,7 @@ img {
   text-decoration: none;
   color: #ffffff;
   display: block;
-  width: 280px;
+  width: 100%;
   padding: 12px 0 10px 0;
   margin-top: 17px;
   margin-bottom: 26px;
@@ -566,7 +567,8 @@ img {
   transform: translate(-50%, -50%);
 }
 .copyright {
-  width: 280px;
+  width: 88%;
+  margin: 0 auto;
   padding: 0 20px;
 }
 .copyright__text {
@@ -788,7 +790,7 @@ img {
 }
 .advantages {
   position: relative;
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   background-color: #292929;
 }
@@ -798,11 +800,9 @@ img {
   bottom: -34px;
   left: 0;
   z-index: 1;
-  width: 0;
-  height: 0;
-  border-top: 34px solid #292929;
-  border-left: 160px solid transparent;
-  border-right: 160px solid transparent;
+  width: 100%;
+  height: 34px;
+  background: linear-gradient(to bottom left, #292929 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #292929 50%, transparent 50%) right / 50.5% 100% no-repeat;
 }
 .advantages__list {
   width: 100%;
@@ -874,7 +874,7 @@ img {
 }
 .news {
   position: relative;
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   padding-top: 71px;
   padding-bottom: 28px;
@@ -934,6 +934,7 @@ img {
   height: 50px;
   margin: 0;
   margin-top: 9px;
+  margin-right: 20px;
   padding: 0;
   padding-top: 5px;
   font-size: 16px;
@@ -962,7 +963,7 @@ img {
   font-weight: 700;
 }
 .news__text {
-  width: 210px;
+  width: 75%;
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -1009,9 +1010,9 @@ img {
 }
 .reviews {
   position: relative;
-  width: 280px;
+  width: auto;
   margin: 0 auto;
-  padding: 30px 20px 0px;
+  padding-top: 30px;
   background-color: #f8f5f2;
 }
 .reviews::after {
@@ -1020,11 +1021,9 @@ img {
   bottom: -34px;
   left: 0;
   z-index: 1;
-  width: 0;
-  height: 0;
-  border-top: 34px solid #f8f5f2;
-  border-left: 160px solid transparent;
-  border-right: 160px solid transparent;
+  width: 100%;
+  height: 34px;
+  background: linear-gradient(to bottom left, #f8f5f2 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #f8f5f2 50%, transparent 50%) right / 50.5% 100% no-repeat;
 }
 .reviews__title {
   font-size: 30px;
@@ -1039,6 +1038,9 @@ img {
 }
 .reviews__write {
   display: none;
+}
+.reviews__list {
+  padding: 0 20px;
 }
 .reviews__item {
   margin: 0;
@@ -1057,7 +1059,7 @@ img {
   width: 50px;
 }
 .reviews__author-text {
-  width: 210px;
+  width: 75%;
 }
 .reviews__author-name {
   font-size: 24px;
