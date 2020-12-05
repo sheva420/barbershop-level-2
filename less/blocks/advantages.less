@@ -19,10 +19,6 @@
 
 		background: linear-gradient(to bottom left, @bg-darkgrey 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, @bg-darkgrey 50%, transparent 50%) right / 50.5% 100% no-repeat;
 		;
-
-		//	border-top: 34px solid @bg-darkgrey;
-		//	border-left: 160px solid transparent;
-		//	border-right: 160px solid transparent;
 	}
 }
 
@@ -83,7 +79,8 @@
 
 @media (min-width: @tablet-width) {
 	.advantages {
-		width: 768px;
+		width: 84%;
+		max-width: 960px;
 	}
 
 	.advantages__list {
@@ -91,8 +88,52 @@
 	}
 
 	.advantages__item {
+		position: relative;
+		
+		padding: 46px 36px 40px 160px;
+				
+		&::after {
+			content: '';
+			
+			position: absolute;
+			bottom: 0;
+			left: 6%;
+			
+			width: 89%;
+			height: 1px;
+			
+			background-color: #4a4a4a;
+			background-position: center 0;
+		}
+		
+		&:last-child::after {
+			content: none;
+		}
+	}
+
+	.advantages__item.slider__item {
 		display: block;
-		padding-top: 0px;
+	}
+	
+	.advantages__item--fast {
+		background-position: 28px 50px;
+	}
+	
+	.advantages__item--cool {
+		background-position: 28px 50px;
+	}
+	
+	.advantages__item--price {
+		background-position: 28px 50px;
+	}
+	
+	.advantages__title {
+		text-align: left;
+	}
+	
+	.advantages__description {
+		text-align: left;
+		margin-bottom: 0;
 	}
 }
 
