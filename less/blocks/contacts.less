@@ -41,7 +41,35 @@
 }
 
 @media (min-width: @tablet-width) {
-	.contacts__title {
-		text-transform: uppercase;
+	.contacts {
+		width: 50%;
+		margin: 0;
+		padding: 0;
 	}
+	
+	.contacts__title {
+		line-height: 10px;
+		text-transform: uppercase;
+		text-align: left;
+	}
+	
+	.contacts__text {
+		line-height: 27px;
+		text-align: left;
+		
+		margin-top: 17px;
+	}
+	
+	.contacts__phone {
+		padding: 0;
+		margin: 0;
+		border: none;
+		
+		font-weight: 400;
+	}
+	
+	.contacts__phone-mobile {
+		display: inline;
+	}
+
 }
