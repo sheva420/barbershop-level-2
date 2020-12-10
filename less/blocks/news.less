@@ -173,7 +173,13 @@
 
 @media (min-width: @desktop-width) {
 	.news {
+		padding-top: 122px;
+		padding-bottom: 40px;
+	}
+	
+	.news__wrapper {
 		width: 1200px;
+		margin: 0 auto;
 	}
 
 	.news__title {
@@ -185,6 +191,27 @@
 	}
 
 	.news__list {
+		margin-top: 50px;
 		flex-direction: row;
+	}
+	
+	.news__item {
+		width: 320px;
+		padding: 0;
+		
+		justify-content: flex-start;
+	}
+	
+	.news__item:nth-child(3) {
+		display: flex;
+	}
+	
+	.news__date {
+		margin-right: 0;
+	}
+	
+	.news__text {
+		width: 230px;
+		padding: 0 30px 0 20px;
 	}
 }
