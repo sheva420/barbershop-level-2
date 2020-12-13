@@ -19,16 +19,13 @@
 .additional-services__list {
 	.list-reset;
 	padding-top: 35px;
+	margin-bottom: -20px;
 }
 
 .additional-services__item {
 	position: relative;
 	
 	margin-bottom: 20px;
-	
-	&:last-child {
-		margin-bottom: 0;
-	}
 }
 
 .additional-services__name {
@@ -128,6 +125,7 @@
 	
 	.additional-services__list {
 		padding-top: 75px;
+		margin-bottom: -42px;
 		
 		display: flex;
 		flex-wrap: wrap;
@@ -135,6 +133,7 @@
 	
 	.additional-services__item {
 		width: 50%;
+		margin-bottom: 42px;
 	}
 
 	.additional-services__name {
@@ -148,5 +147,12 @@
 	
 	.additional-services__checkbox:checked + label span::before {
 		top: 40%;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.additional-services__item {
+		width: calc(100% / 3);
+		
 	}
 }

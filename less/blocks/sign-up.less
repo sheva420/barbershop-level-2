@@ -25,6 +25,7 @@
 
 .sign-up__wrapper {
 	width: 88%;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -83,6 +84,7 @@
 	.sign-up__title {
 		margin-bottom: 0;
 
+		font-size: 40px;
 		text-align: left;
 	}
 
@@ -102,11 +104,27 @@
 	
 	.sign-up__button {
 		margin-top: 60px;
+		padding: 20px 0px;
+		
+		font-size: 24px;
+		line-height: 30px;
 	}
 }
 
 @media (min-width: @desktop-width) {
 	.sign-up {
-		width: 1200px;
+		width: 100%;
+		
+		margin-top: -341px;
+		
+		&::before {
+			top: -64px;
+			
+			height: 64px;
+		}
+	}
+	
+	.sign-up__button {
+		margin-top: 80px;
 	}
 }
