@@ -54,11 +54,19 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+	
+	.contacts-form__item {
+		margin-bottom: 35px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 
 	.contacts-form__item--1,
 	.contacts-form__item--2,
 	.contacts-form__item--3 {
-		width: 214px;
+		width: calc(100% / 3);
 	}
 
 	.contacts-form__item--4,

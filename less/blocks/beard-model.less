@@ -117,9 +117,53 @@
 }
 
 @media (min-width: @tablet-width) {
+	.beard-model {
+		margin-top: 60px;
+	}
+	
 	.beard-model__title {
+		position: relative;
+		
+		width: 100%;
+		
 		.title-style;
 		font-weight: 400;
+		
+		&::before {
+			content: '';
+			
+			position: absolute;
+			top: 50%;
+			left: 0;
+			
+			width: 21%;
+			height: 1px;
+			
+			background-color: #e5ddd5;
+			transform: translateY(-50%);
+		}
+		
+		&::after {
+			content: '';
+			
+			position: absolute;
+			top: 50%;
+			right: 0;
+			
+			width: 21%;
+			height: 1px;
+			
+			background-color: #e5ddd5;
+			transform: translateY(-50%);
+		}
+	}
+	
+	.beard-model__item {
+		width: 20%;
+	}
+	
+	.beard-model__list {
+		padding: 45px 18px 0 15px;
 	}
 }
 
