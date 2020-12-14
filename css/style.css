@@ -1502,10 +1502,21 @@ img {
   }
 }
 .works {
+  position: relative;
   width: auto;
   margin: 0 auto;
   padding-top: 34px;
+  padding-bottom: 27px;
   background-color: #f8f5f2;
+}
+.works::after {
+  content: '';
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+  width: 100%;
+  height: 34px;
+  background: linear-gradient(to bottom left, #f8f5f2 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #f8f5f2 50%, transparent 50%) right / 50.5% 100% no-repeat;
 }
 .works__wrapper {
   width: 88%;
@@ -1629,18 +1640,58 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 17px;
+  margin-right: -80px;
+  padding-left: 36px;
   display: flex;
   flex-wrap: wrap;
 }
 .services__item {
+  position: relative;
+  margin-right: 80px;
   font-size: 16px;
   line-height: 27px;
   text-transform: uppercase;
   color: #000000;
 }
+.services__item--cut::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -36px;
+  width: 21px;
+  height: 20px;
+  background-image: url(../img/cut-icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.services__item--shave::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -44px;
+  width: 23px;
+  height: 21px;
+  background-image: url(../img/shave-icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.services__item--mustache {
+  text-indent: 10px;
+}
+.services__item--mustache::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -48px;
+  width: 45px;
+  height: 12px;
+  background-image: url(../img/mustache-icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
 .prices {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
+  padding-top: 70px;
   background-color: #353535;
 }
 .prices__title {
@@ -1651,11 +1702,42 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
   color: #ffffff;
 }
+.prices__wrapper {
+  width: 88%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.prices__table {
+  margin: 0 auto;
+}
+.prices__table,
+.prices__table td,
+.prices__table tr {
+  border-collapse: collapse;
+  outline: 1px solid red;
+}
+.prices__table tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+.prices__number {
+  display: none;
+}
 .prices__name {
+  width: 72%;
   font-weight: 700;
   color: #ffffff;
+}
+.prices__additionally {
+  width: 100%;
+  margin-bottom: 16px;
+  order: 3;
+}
+.prices__value {
+  width: 26%;
 }
 @media (min-width: 768px) {
   .prices {
