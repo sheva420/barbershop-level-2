@@ -1,8 +1,24 @@
 .prices {
+	position: relative;
+	
 	width: auto;
 	padding-top: 70px;
+	padding-bottom: 20px;
 	
 	background-color: @bg-grey;
+	
+	&::after {
+		content: '';
+		
+		position: absolute;
+		bottom: -34px;
+		left: 0;
+		
+		width: 100%;
+		height: 34px;
+		
+		background: linear-gradient(to bottom left, @bg-grey 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, @bg-grey 50%, transparent 50%) right / 50.5% 100% no-repeat;
+	}
 }
 
 .prices__title {
@@ -19,13 +35,14 @@
 
 .prices__table {
 	margin: 0 auto;
+	margin-top: 30px;
 }
 
 .prices__table,
 .prices__table td,
 .prices__table tr {
 	border-collapse: collapse;
-	outline: 1px solid red;
+//	outline: 1px solid red;
 }
 
 .prices__table tr {
