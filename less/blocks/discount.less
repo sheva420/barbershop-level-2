@@ -7,7 +7,7 @@
 	margin-top: 25px;
 	padding: 20px 30px 20px 113px;
 
-	outline: 1px solid #484848;
+	border: 1px solid #484848;
 
 	&::before {
 		content: '';
@@ -33,6 +33,21 @@
 }
 
 @media (min-width: @tablet-width) {
+	.discount {
+		width: calc(100% - 215px);
+		min-height: 52px;
+		margin-top: 10px;
+		padding: 39px 30px 20px 185px;
+		
+		&::before {
+			top: 20px;
+			left: 26px;
+			
+			width: 70px;
+			height: 70px;
+		}
+	}
+	
 	.discount__text {
 		font-size: 30px;
 		font-weight: 700;

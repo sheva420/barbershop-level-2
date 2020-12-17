@@ -458,6 +458,7 @@ img {
     width: 84%;
     margin: 0 auto;
     padding-top: 50px;
+    padding-bottom: 60px;
   }
   .page-footer__wrapper {
     flex-direction: row;
@@ -671,7 +672,7 @@ img {
 .copyright__link {
   text-decoration: none;
   display: block;
-  padding: 15px 0;
+  padding: 12px 0;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
@@ -1516,6 +1517,7 @@ img {
   left: 0;
   width: 100%;
   height: 34px;
+  z-index: 1;
   background: linear-gradient(to bottom left, #f8f5f2 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #f8f5f2 50%, transparent 50%) right / 50.5% 100% no-repeat;
 }
 .works__wrapper {
@@ -1538,7 +1540,6 @@ img {
 }
 .works__list {
   width: 100%;
-  margin-bottom: -20px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1547,6 +1548,9 @@ img {
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid #e5ddd5;
+}
+.works__item:last-child {
+  margin-bottom: 0;
 }
 .works__item--month {
   position: relative;
@@ -1614,10 +1618,78 @@ img {
 }
 @media (min-width: 768px) {
   .works {
-    width: 768px;
+    width: auto;
+    margin-top: -187px;
+    padding-top: 54px;
+    padding-bottom: 62px;
+  }
+  .works::before {
+    content: '';
+    position: absolute;
+    top: -41px;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    background: linear-gradient(to bottom left, transparent 50%, #f8f5f2 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, transparent 50%, #f8f5f2 50%) right / 50.5% 100% no-repeat;
+  }
+  .works::after {
+    bottom: -41px;
+    height: 41px;
+  }
+  .works__wrapper {
+    width: 84%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .works__title {
+    margin-bottom: 0;
+    font-size: 40px;
+    text-align: left;
+  }
+  .works__to-main {
+    width: 160px;
+    margin-left: auto;
+    padding: 13px 0;
+    display: block;
+    text-align: center;
+    outline: 1px solid #e5ddd5;
+  }
+  .works__list {
+    margin-top: 38px;
   }
   .works__item {
     width: 100%;
+    display: flex;
+  }
+  .works__item--month::before {
+    top: 35px;
+    left: -2px;
+  }
+  .works__item--month::after {
+    top: 35px;
+    left: 166px;
+  }
+  .works__picture {
+    width: 41%;
+    height: auto;
+  }
+  .works__item--month .works__picture {
+    width: 41%;
+    height: auto;
+  }
+  .works__picture img {
+    width: 270px;
+  }
+  .works__item-wrapper {
+    width: calc(59% - 100px);
+    padding: 46px 50px 31px;
+    display: flex;
+    flex-direction: column;
+  }
+  .works__text {
+    margin-top: 27px;
   }
 }
 @media (min-width: 1200px) {
@@ -1689,6 +1761,11 @@ img {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .services {
+    margin-top: auto;
+  }
+}
 .prices {
   position: relative;
   width: auto;
@@ -1752,7 +1829,51 @@ img {
 }
 @media (min-width: 768px) {
   .prices {
-    width: 768px;
+    padding-top: 90px;
+    padding-bottom: 56px;
+  }
+  .prices::after {
+    content: none;
+  }
+  .prices__wrapper {
+    width: 84%;
+    max-width: 960px;
+  }
+  .prices__title {
+    font-size: 40px;
+    text-align: left;
+  }
+  .prices__table {
+    width: 100%;
+    margin-top: 53px;
+  }
+  .prices__table tr {
+    height: 54px;
+    display: table-row;
+  }
+  .prices__table td {
+    padding: 0 20px;
+    border: 1px solid #484848;
+  }
+  .prices__number {
+    width: 11%;
+    display: table-cell;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .prices__name {
+    width: 39%;
+  }
+  .prices__additionally {
+    width: 25%;
+    margin-bottom: 0;
+    order: 0;
+  }
+  .prices__bracket {
+    display: none;
+  }
+  .prices__value {
+    width: 25%;
   }
 }
 @media (min-width: 1200px) {
@@ -1771,7 +1892,7 @@ img {
   margin: 0 auto;
   margin-top: 25px;
   padding: 20px 30px 20px 113px;
-  outline: 1px solid #484848;
+  border: 1px solid #484848;
 }
 .discount::before {
   content: '';
@@ -1791,6 +1912,18 @@ img {
   text-transform: none;
 }
 @media (min-width: 768px) {
+  .discount {
+    width: calc(100% - 215px);
+    min-height: 52px;
+    margin-top: 10px;
+    padding: 39px 30px 20px 185px;
+  }
+  .discount::before {
+    top: 20px;
+    left: 26px;
+    width: 70px;
+    height: 70px;
+  }
   .discount__text {
     font-size: 30px;
     font-weight: 700;
