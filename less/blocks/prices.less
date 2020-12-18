@@ -136,11 +136,28 @@
 
 @media (min-width: @desktop-width) {
 	.prices {
-		width: 1200px;
+		width: auto;
+		padding-top: 83px;
+		padding-bottom: 83px;
 	}
 
 	.prices__wrapper {
-		width: 100%;
+		width: 960px;
 		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.prices__title {
+		width: 100%;
+		margin-bottom: 54px;
+	}
+	
+	.prices__table {
+		width: 630px;
+		margin: 0;
+	}
+	
+	.prices__table td {
+		padding: 0 18px;
 	}
 }

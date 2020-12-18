@@ -1639,7 +1639,6 @@ img {
   .works__wrapper {
     width: 84%;
     max-width: 960px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1694,17 +1693,80 @@ img {
 }
 @media (min-width: 1200px) {
   .works {
-    width: 1200px;
+    width: auto;
+    padding-bottom: 88px;
+    margin-top: -342px;
+  }
+  .works::before {
+    top: -64px;
+    height: 64px;
+  }
+  .works::after {
+    content: none;
+  }
+  .works__wrapper {
+    width: 960px;
+  }
+  .works__title {
+    margin-top: 10px;
   }
   .works__list {
+    width: auto;
+    margin-left: -39px;
+    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
   }
   .works__item {
     width: 294px;
+    margin-left: 39px;
+    margin-bottom: 0;
+    flex-direction: column;
+    border: none;
   }
-  .works__item:first-child {
+  .works__item--month {
     width: 100%;
+    margin-bottom: 40px;
+    flex-direction: row;
+  }
+  .works__item--month::before {
+    top: 25px;
+    left: auto;
+    right: 0;
+  }
+  .works__item--month::after {
+    top: 25px;
+    left: auto;
+    right: 168px;
+    transform: rotate(180deg);
+  }
+  .works__item-wrapper {
+    width: auto;
+    min-height: 182px;
+    padding: 32px 35px;
+    border: 1px solid #e5ddd5;
+    border-top: none;
+  }
+  .works__item--month .works__item-wrapper {
+    width: 330px;
+    min-height: auto;
+    padding: 131px 110px 30px 40px;
+    border-left: none;
+    border-top: 1px solid #e5ddd5;
+  }
+  .works__picture {
+    width: 294px;
+  }
+  .works__item--month .works__picture {
+    width: 480px;
+    height: 480px;
+  }
+  .works__picture img {
+    width: 294px;
+  }
+  .works__item--month img {
+    width: 480px;
+    height: 480px;
   }
 }
 .services {
@@ -1719,7 +1781,7 @@ img {
 }
 .services__item {
   position: relative;
-  margin-right: 80px;
+  margin-right: 79px;
   font-size: 16px;
   line-height: 27px;
   text-transform: uppercase;
@@ -1878,11 +1940,25 @@ img {
 }
 @media (min-width: 1200px) {
   .prices {
-    width: 1200px;
+    width: auto;
+    padding-top: 83px;
+    padding-bottom: 83px;
   }
   .prices__wrapper {
-    width: 100%;
+    width: 960px;
     display: flex;
+    flex-wrap: wrap;
+  }
+  .prices__title {
+    width: 100%;
+    margin-bottom: 54px;
+  }
+  .prices__table {
+    width: 630px;
+    margin: 0;
+  }
+  .prices__table td {
+    padding: 0 18px;
   }
 }
 .discount {
@@ -1931,6 +2007,19 @@ img {
   }
 }
 @media (min-width: 1200px) {
+  .discount {
+    width: 124px;
+    padding: 200px 72px 20px;
+    margin: 0;
+    margin-left: auto;
+    text-align: center;
+  }
+  .discount::before {
+    top: 34px;
+    left: 64px;
+    width: 142px;
+    height: 139px;
+  }
   .discount__text {
     font-size: 20px;
     line-height: 27px;
