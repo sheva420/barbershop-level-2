@@ -16,3 +16,36 @@
 	
 	background-color: #826550;
 }
+
+.button--ghost {
+	&:hover,
+	&:focus {
+		border-color: #d5c9bd;
+	}
+}
+
+.button-radio + label:hover::before {
+	border-color: #d5c9bd;
+}
+
+.button-radio + label:active::before {
+	background-color: #d5c9bd;
+}
+
+.button-radio:checked + label:hover::before,
+.button-radio:checked + label:hover::after {
+	border-color: #d5c9bd;
+}
+
+.button-radio:checked + label:active::before,
+.button-radio:checked + label:active::after {
+	background-color: #d5c9bd;
+}
+
+.button-checkbox + label:hover::before {
+	border-color: #d5c9bd;
+}
+
+.button-checkbox + label:active::before {
+	background-color: #d5c9bd;
+}

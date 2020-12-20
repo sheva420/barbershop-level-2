@@ -60,7 +60,7 @@
 		<section class="works">
 			<div class="works__wrapper">
 				<h2 class="works__title">Наши работы</h2>
-				<a class="works__to-main button" href="index.html">На главную</a>
+				<a class="works__to-main button button--ghost" href="index.html">На главную</a>
 				<ul class="works__list">
 					<li class="works__item works__item--month">
 						<picture class="works__picture">
@@ -203,21 +203,21 @@
 		<div class="popup__wrapper">
 			<h2 class="popup__title">Личный кабинет</h2>
 			<p class="popup__text">Введите свой логин и пароль, чтобы войти</p>
-			<form action="#">
+			<form class="popup__form" action="#">
 				<p class="popup__input-wrapper popup__input-wrapper--login">
-					<input class="popup__input" type="text" placeholder="Логин">
+					<input class="popup__input input" type="text" placeholder="Логин">
 				</p>
 				<p class="popup__input-wrapper popup__input-wrapper--password">
-					<input class="popup__input" type="password" placeholder="Пароль">
+					<input class="popup__input input" type="password" placeholder="Пароль">
 				</p>
 				<p class="popup__input-wrapper popup__input-wrapper--buttons">
-					<input class="popup__checkbox button--checkbox" type="checkbox" id="remember">
-					<label class="popup__remember" for="remember">Запомните меня</label>
+					<input class="popup__checkbox visually-hidden" type="checkbox" id="remember">
+					<label class="popup__remember" for="remember"><span>Запомните меня</span></label>
 					<a class="popup__forgot" href="#">Я забыл пароль!</a>
 				</p>
-				<button class="popup__button button" type="submit">Войти в личный кабинет</button>
+				<button class="popup__button button button--brown" type="submit">Войти <span>в личный кабинет</span></button>
 			</form>
-			<button class="popup__close">Закрыть окно</button>
+			<button class="popup__close button">Закрыть</button>
 		</div>
 	</section>
 

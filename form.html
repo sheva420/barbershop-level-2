@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 </head>
 
-<body>
+<body class="body--form">
 
 	<header class="page-header">
 		<a class="page-header__logo">
@@ -60,27 +60,27 @@
 		<section class="sign-up">
 			<div class="sign-up__wrapper">
 				<h2 class="sign-up__title">Запись на стрижку</h2>
-				<a class="sign-up__to-main button" href="index.html">На главную</a>
+				<a class="sign-up__to-main button button--ghost" href="index.html">На главную</a>
 				<form class="sign-up__form" action="#">
 					<fieldset class="sign-up__contacts-form contacts-form">
 						<ul class="contacts-form__list">
 							<li class="contacts-form__item contacts-form__item--1">
-								<input class="contacts-form__input" type="text" placeholder="Имя">
+								<input class="contacts-form__input input" type="text" placeholder="Имя">
 							</li>
 							<li class="contacts-form__item contacts-form__item--2">
-								<input class="contacts-form__input" type="text" placeholder="Фамилия">
+								<input class="contacts-form__input input" type="text" placeholder="Фамилия">
 							</li>
 							<li class="contacts-form__item contacts-form__item--3">
-								<input class="contacts-form__input" type="text" placeholder="Отчество">
+								<input class="contacts-form__input input" type="text" placeholder="Отчество">
 							</li>
 							<li class="contacts-form__item contacts-form__item--4">
-								<input class="contacts-form__input" type="text" placeholder="Контактный телефон">
+								<input class="contacts-form__input input" type="text" placeholder="Контактный телефон">
 							</li>
 							<li class="contacts-form__item contacts-form__item--5">
-								<input class="contacts-form__input" type="email" placeholder="Контактный e-mail">
+								<input class="contacts-form__input input" type="email" placeholder="Контактный e-mail">
 							</li>
 							<li class="contacts-form__item contacts-form__item--6">
-								<textarea class="contacts-form__input contacts-form__input--message" cols="30" rows="3" placeholder="Доп. информация для мастера"></textarea>
+								<textarea class="contacts-form__input contacts-form__input--message input" cols="30" rows="3" placeholder="Доп. информация для мастера"></textarea>
 							</li>
 						</ul>
 					</fieldset>
@@ -138,7 +138,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button class="sign-up__button button button--submit" type="submit">Отправить заявку</button>
+					<button class="sign-up__button button button--brown button--submit" type="submit">Отправить заявку</button>
 				</form>
 			</div>
 		</section>
@@ -177,35 +177,41 @@
 	</footer>
 
 	<section class="popup popup--login">
-		<h2 class="popup__title">Личный кабинет</h2>
-		<p class="popup__text">Введите свой логин и пароль, чтобы войти</p>
-		<form action="#">
-			<p class="popup__input-wrapper popup__input-wrapper--login">
-				<input class="popup__input" type="text" placeholder="Логин">
-			</p>
-			<p class="popup__input-wrapper popup__input-wrapper--password">
-				<input class="popup__input" type="password" placeholder="Пароль">
-			</p>
-			<p class="popup__input-wrapper popup__input-wrapper--buttons">
-				<input class="popup__checkbox button--checkbox" type="checkbox" id="remember">
-				<label class="popup__remember" for="remember">Запомните меня</label>
-				<a class="popup__forgot" href="#">Я забыл пароль!</a>
-			</p>
-			<button class="popup__button button" type="submit">Войти в личный кабинет</button>
-		</form>
-		<button class="popup__close">Закрыть окно</button>
+		<div class="popup__wrapper">
+			<h2 class="popup__title">Личный кабинет</h2>
+			<p class="popup__text">Введите свой логин и пароль, чтобы войти</p>
+			<form class="popup__form" action="#">
+				<p class="popup__input-wrapper popup__input-wrapper--login">
+					<input class="popup__input input" type="text" placeholder="Логин">
+				</p>
+				<p class="popup__input-wrapper popup__input-wrapper--password">
+					<input class="popup__input input" type="password" placeholder="Пароль">
+				</p>
+				<p class="popup__input-wrapper popup__input-wrapper--buttons">
+					<input class="popup__checkbox visually-hidden" type="checkbox" id="remember">
+					<label class="popup__remember" for="remember"><span>Запомните меня</span></label>
+					<a class="popup__forgot" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="popup__button button" type="submit">Войти <span>в личный кабинет</span></button>
+			</form>
+			<button class="popup__close button">Закрыть</button>
+		</div>
 	</section>
 
 	<section class="popup popup--failure">
-		<h2 class="popup__title">Неудача</h2>
-		<p class="popup__text">Что-то пошло не так.<br> Проверьте выделенные<br> красным поля формы.</p>
-		<button class="popup__button button">Ок</button>
+		<div class="popup__wrapper">
+			<h2 class="popup__title">Неудача</h2>
+			<p class="popup__text">Что-то пошло не так.<br> Проверьте выделенные<br> красным поля формы.</p>
+			<button class="popup__button button button--brown">Ок</button>
+		</div>
 	</section>
 
 	<section class="popup popup--success">
-		<h2 class="popup__title">Это успех!</h2>
-		<p class="popup__text">Ваша заявка отправлена.<br> Ожидайте, мы свяжемся с вами как только<br> будет минутка.</p>
-		<button class="popup__button button">Закрыть окно</button>
+		<div class="popup__wrapper">
+			<h2 class="popup__title">Это успех!</h2>
+			<p class="popup__text">Ваша заявка отправлена.<br> Ожидайте, мы свяжемся с вами как только<br> будет минутка.</p>
+			<button class="popup__button button button--brown">Закрыть окно</button>
+		</div>
 	</section>
 
 	<script>
