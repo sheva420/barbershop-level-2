@@ -108,6 +108,10 @@
 	}
 }
 
+.popup--show {
+	display: block;
+}
+
 .popup__input-wrapper--login::after {
 	content: '';
 	
@@ -219,7 +223,7 @@
 	text-align: center;
 }
 
-.popup__button span {
+.popup__button b {
 	display: none;
 }
 
@@ -233,6 +237,10 @@
 	padding: 13px 0;
 	
 	outline: 1px solid #e5ddd5;
+	
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 @media (min-width: @tablet-width) {
@@ -306,7 +314,7 @@
 		width: 320px;
 	}
 	
-	.popup__button span {
+	.popup__button b {
 		display: inline;
 	}
 	

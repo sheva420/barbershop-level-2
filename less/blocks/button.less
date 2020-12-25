@@ -22,6 +22,10 @@
 	&:focus {
 		border-color: #d5c9bd;
 	}
+	
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .button-radio + label:hover::before {
@@ -48,4 +52,19 @@
 
 .button-checkbox + label:active::before {
 	background-color: #d5c9bd;
+}
+
+.button--brown {
+	&:hover {
+		background-color: #6a4d38;
+		cursor: pointer;
+	}
+	
+	&:active span {
+		opacity: 0.3;
+	}
+	
+	&:disabled {
+		background-color: #aeaeae;
+	}
 }

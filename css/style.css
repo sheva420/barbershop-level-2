@@ -68,6 +68,9 @@ img {
 .button--ghost:focus {
   border-color: #d5c9bd;
 }
+.button--ghost:hover {
+  cursor: pointer;
+}
 .button-radio + label:hover::before {
   border-color: #d5c9bd;
 }
@@ -87,6 +90,16 @@ img {
 }
 .button-checkbox + label:active::before {
   background-color: #d5c9bd;
+}
+.button--brown:hover {
+  background-color: #6a4d38;
+  cursor: pointer;
+}
+.button--brown:active span {
+  opacity: 0.3;
+}
+.button--brown:disabled {
+  background-color: #aeaeae;
 }
 .input:hover {
   border-color: #d5c9bd;
@@ -549,6 +562,16 @@ img {
   font-weight: 700;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+.contacts__phone:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.contacts__phone:active {
+  background-color: #252525;
+  border-color: #252525;
+}
+.contacts__phone:active b {
+  opacity: 0.3;
+}
 .contacts__phone-mobile {
   display: none;
 }
@@ -572,6 +595,11 @@ img {
     padding: 0;
     margin: 0;
     border: none;
+  }
+  .contacts__phone:active {
+    background-color: transparent;
+  }
+  .contacts__phone b {
     font-weight: 400;
   }
   .contacts__phone-mobile {
@@ -594,6 +622,16 @@ img {
   margin: 0;
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.social__item:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.social__item:active {
+  background-color: #252525;
+  border-color: #252525;
+}
+.social__item:active .social__link {
+  opacity: 0.3;
 }
 .social__list {
   list-style-type: none;
@@ -712,6 +750,16 @@ img {
   text-align: center;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.copyright__link:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.copyright__link:active {
+  background-color: #252525;
+  border-color: #252525;
+}
+.copyright__link:active span {
+  opacity: 0.3;
 }
 @media (min-width: 768px) {
   .copyright {
@@ -945,7 +993,7 @@ img {
   z-index: 1;
   width: 100%;
   height: 34px;
-  background: linear-gradient(to bottom left, #292929 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #292929 50%, transparent 50%) right / 50.5% 100% no-repeat;
+  background: linear-gradient(to bottom left, #292929 49%, transparent 51%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #292929 49%, transparent 51%) right / 50.5% 100% no-repeat;
 }
 .advantages__list {
   width: 100%;
@@ -993,6 +1041,9 @@ img {
 }
 .advantages__toggle {
   border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.advantages__toggle.advantages__toggle--active {
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .advantages::after {
@@ -1314,7 +1365,7 @@ img {
   z-index: 1;
   width: 100%;
   height: 34px;
-  background: linear-gradient(to bottom left, #f8f5f2 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #f8f5f2 50%, transparent 50%) right / 50.5% 100% no-repeat;
+  background: linear-gradient(to bottom left, #f8f5f2 49%, transparent 51%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #f8f5f2 49%, transparent 51%) right / 50.5% 100% no-repeat;
 }
 .reviews__title {
   font-size: 30px;
@@ -1374,6 +1425,9 @@ img {
 }
 .reviews__toggle {
   border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.reviews__toggle.reviews__toggle--active {
+  background-color: #353535;
 }
 @media (min-width: 768px) {
   .reviews {
@@ -1581,7 +1635,7 @@ img {
   width: 100%;
   height: 34px;
   z-index: 1;
-  background: linear-gradient(to bottom left, #f8f5f2 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #f8f5f2 50%, transparent 50%) right / 50.5% 100% no-repeat;
+  background: linear-gradient(to bottom left, #f8f5f2 49%, transparent 51%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #f8f5f2 49%, transparent 51%) right / 50.5% 100% no-repeat;
 }
 .works__wrapper {
   width: 88%;
@@ -1693,7 +1747,7 @@ img {
     left: 0;
     width: 100%;
     height: 41px;
-    background: linear-gradient(to bottom left, transparent 50%, #f8f5f2 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, transparent 50%, #f8f5f2 50%) right / 50.5% 100% no-repeat;
+    background: linear-gradient(to bottom left, transparent 49%, #f8f5f2 51%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, transparent 49%, #f8f5f2 51%) right / 50.5% 100% no-repeat;
   }
   .works::after {
     bottom: -41px;
@@ -1905,7 +1959,7 @@ img {
   left: 0;
   width: 100%;
   height: 34px;
-  background: linear-gradient(to bottom left, #353535 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #353535 50%, transparent 50%) right / 50.5% 100% no-repeat;
+  background: linear-gradient(to bottom left, #353535 49%, transparent 51%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #353535 49%, transparent 51%) right / 50.5% 100% no-repeat;
 }
 .prices__title {
   margin: 0;
@@ -2106,7 +2160,7 @@ img {
   z-index: 1;
   width: 100%;
   height: 34px;
-  background: linear-gradient(to bottom left, #f8f5f2 50%, transparent 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #f8f5f2 50%, transparent 50%) right / 50.5% 100% no-repeat;
+  background: linear-gradient(to bottom left, #f8f5f2 49%, transparent 51%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, #f8f5f2 49%, transparent 51%) right / 50.5% 100% no-repeat;
 }
 .sign-up__wrapper {
   width: 88%;
@@ -2150,7 +2204,7 @@ img {
     left: 0;
     width: 100%;
     height: 41px;
-    background: linear-gradient(to bottom left, transparent 50%, #f8f5f2 50%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, transparent 50%, #f8f5f2 50%) right / 50.5% 100% no-repeat;
+    background: linear-gradient(to bottom left, transparent 49%, #f8f5f2 51%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, transparent 49%, #f8f5f2 51%) right / 50.5% 100% no-repeat;
   }
   .sign-up::after {
     content: none;
@@ -2656,6 +2710,9 @@ img {
 .popup__input::placeholder {
   color: #000000;
 }
+.popup--show {
+  display: block;
+}
 .popup__input-wrapper--login::after {
   content: '';
   position: absolute;
@@ -2739,7 +2796,7 @@ img {
   background-color: #826550;
   text-align: center;
 }
-.popup__button span {
+.popup__button b {
   display: none;
 }
 .popup__close {
@@ -2749,6 +2806,9 @@ img {
   width: 130px;
   padding: 13px 0;
   outline: 1px solid #e5ddd5;
+}
+.popup__close:hover {
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .popup {
@@ -2803,7 +2863,7 @@ img {
   .popup__button {
     width: 320px;
   }
-  .popup__button span {
+  .popup__button b {
     display: inline;
   }
   .popup__close {
